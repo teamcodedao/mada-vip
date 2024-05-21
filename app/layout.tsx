@@ -12,6 +12,7 @@ const luckiestGuyFont = Luckiest_Guy({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_METADATABASE_URL),
   title: "Magatrump's",
   description:
     "Trump Speaks Out About VP Hopeful Kristi Noem's Controversial Dog-Killing Story",

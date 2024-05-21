@@ -31,12 +31,18 @@ devDependencies:
   eslint-config-next:
     specifier: 14.2.3
     version: 14.2.3(eslint@8.57.0)(typescript@5.4.5)
+  eslint-plugin-tailwindcss:
+    specifier: ^3.15.2
+    version: 3.15.2(tailwindcss@3.4.3)
   postcss:
     specifier: ^8
     version: 8.4.38
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.3
+  tailwindcss-multi:
+    specifier: ^0.4.6
+    version: 0.4.6
   typescript:
     specifier: ^5
     version: 5.4.5
@@ -1137,6 +1143,17 @@ packages:
       resolve: 2.0.0-next.5
       semver: 6.3.1
       string.prototype.matchall: 4.0.11
+    dev: true
+
+  /eslint-plugin-tailwindcss@3.15.2(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-+HJfWcyP5B/e8r8qVSaTbf2i4+HsESJJsue66qFHRstV11CNTfdaDD9zkCVA1pm2EplBZ/BSJ3Htfzvb4YTVKw==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: ^3.4.0
+    dependencies:
+      fast-glob: 3.3.2
+      postcss: 8.4.38
+      tailwindcss: 3.4.3
     dev: true
 
   /eslint-scope@7.2.2:
@@ -2559,6 +2576,12 @@ packages:
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /tailwindcss-multi@0.4.6:
+    resolution: {integrity: sha512-Bn9yLrMkeYFrJjRYuuTfqT9ibm6U2qnTwlIKYchWyGX3qgL+1+NN4JgiHJG1qrR4QQeU28eCl8sMSBobdzijvQ==}
+    dependencies:
+      '@types/node': 20.12.12
     dev: true
 
   /tailwindcss@3.4.3:

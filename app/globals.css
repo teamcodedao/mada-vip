@@ -7,3 +7,7 @@
     text-wrap: balance;
   }
 }
+
+body {
+  @apply bg-secondary bg-[url(./dog-bg.png)] bg-center;
+}

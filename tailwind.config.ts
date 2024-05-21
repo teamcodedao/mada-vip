@@ -12,6 +12,9 @@ const config: Config = {
         primary: '#B31942',
         secondary: '#0F2446',
       },
+      fontFamily: {
+        'luckiest-guy': ['var(--luckiest-guy-font)'],
+      },
       screens: {
         desktop: '1440px',
       },

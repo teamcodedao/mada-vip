@@ -1,8 +1,15 @@
 import type {Metadata} from 'next';
-import {Inter} from 'next/font/google';
+import {Inter, Luckiest_Guy} from 'next/font/google';
 import './globals.css';
+import clsx from 'clsx';
 
 const inter = Inter({subsets: ['latin']});
+
+const luckiestGuyFont = Luckiest_Guy({
+  subsets: ['latin'],
+  weight: ['400'],
+  variable: '--luckiest-guy-font',
+});
 
 export const metadata: Metadata = {
   title: "Magatrump's",
@@ -17,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={clsx(inter.className, luckiestGuyFont.variable)}>
+        {children}
+      </body>
     </html>
   );
 }

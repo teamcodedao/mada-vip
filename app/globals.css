@@ -9,5 +9,5 @@
 }
 
 body {
-  @apply bg-secondary bg-[url(./dog-bg.png)] bg-center;
+  @apply bg-secondary bg-[url(./dog-bg.png)] bg-center bg-blend-soft-light;
 }
